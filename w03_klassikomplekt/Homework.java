@@ -1,25 +1,32 @@
-import java.util.ArrayList;
-
-public class Homework {
-
-  static ArrayList<String> other = new ArrayList<>();
-  public static void main(String[] args) {
-    System.err.println("Started");
-    doSomething();
-
-  
-
-    Homework hw = new Homework();
-
-    System.out.println(hw.add(3, 4));
-    System.out.println(hw.add(10, 15));
-  }
-
-  public static void doSomething(){
-    System.out.println("Doing something");
-  }
-
-  public int add(int a, int b){
-    return a + b;
-  }
-}
+public class Homework {  
+  public static void selectionSort(int[] arr){  
+      for (int i = 0; i < arr.length - 1; i++)  
+      {  
+          int index = i;  
+          for (int j = i + 1; j < arr.length; j++){  
+              if (arr[j] < arr[index]){  
+                  index = j;
+              }  
+          }  
+          int smallerNumber = arr[index];   
+          arr[index] = arr[i];  
+          arr[i] = smallerNumber;  
+      }  
+  }  
+     
+  public static void main(String a[]){  
+      int[] arr1 = {50,2,320,22,3,121,8,2};  
+      System.out.println("Before Selection Sort");  
+      for(int i:arr1){  
+          System.out.print(i+" ");  
+      }  
+      System.out.println();  
+        
+      selectionSort(arr1); 
+       
+      System.out.println("After Selection Sort");  
+      for(int i:arr1){  
+          System.out.print(i+" ");  
+      }  
+  }  
+}  
