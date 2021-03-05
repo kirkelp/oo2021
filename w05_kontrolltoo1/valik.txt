@@ -1,0 +1,13 @@
+Olen kahevahel ja mõtlen veel kumba neist valida
+
+Algarvud
+
+* Teata, kas kasutaja sisestatud arv jagub kahe, kolme viie või seitsmega.
+* Teata, kas kasutaja sisestatud arv on algarv. 
+* Koosta massiiv esimese tuhande algarvuga. Leia selle sõela abil, millised on kümme suurimat algarvu, mis on väiksemad, kui tuhandenda algarvu ruut. 
+
+Teisendamine
+
+* Luua klass, kus oleksid funktsioonid teisendada arv kümnendsüsteemist kahendsüsteemi, kaheksandsüsteemi, kuueteistkümnendsüsteemi
+* Samuti tagasi nendest
+* Omavahel ka nt kümnendsüsteemist kuueteistkümnendsüsteemi, kaheksandsüsteemist kümnendsüsteemi jne (kõik seosed)
