@@ -1,3 +1,6 @@
+import java.time.LocalDate;
+import java.time.Period;
+
 public class EstonianID implements PersonalCodeBehaviour {
 
     private String code;
@@ -22,6 +25,15 @@ public class EstonianID implements PersonalCodeBehaviour {
         return fullyear;
     }
     
+    @Override
+    public int getMonth() {
+        return Integer.parseInt(code.substring(3, 5));
+    }
+
+    @Override
+    public int getDay() {
+        return Integer.parseInt(code.substring(5, 7));
+    }
   
     @Override
     public String getDOB() {
@@ -31,9 +43,10 @@ public class EstonianID implements PersonalCodeBehaviour {
     }
 
     @Override
-    public int getAge() {
-        
-        return 0;
+    public String getAge() {
+        LocalDate date = LocalDate.of(getFullYear(), getMonth(), getDay());
+        LocalDate now = LocalDate.now();
+        String age = Integer.toString(Period.between(date, now).getYears());
+        return age;
     }
-    
-  }
+}
