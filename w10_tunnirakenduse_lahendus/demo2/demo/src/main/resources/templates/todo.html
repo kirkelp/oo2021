@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="static/todo.css">
+
+  <title>Todo list</title>
+</head>
+<body>
+  <h2>To-do list</h2>
+  <div th:switch="${todos}">
+    <h2 th:case="null">empty To-do list</h2>
+    <div th:case="*">
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <br>
+            <th>Description</th>
+            <br> 
+            <th>Date</th>
+            <br>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr th:each="todo : ${todos}">
+            <td th:text="${todo.title}"></td>
+            <td th:text="${todo.description}"></td>
+            <td th:text="${todo.date}"></td>
+            <td><a th:href="@{/edit/{id}(id=${todo.id})}">Edit</a></td>
+            <td><a th:href="@{/delete/{id}(id=${todo.id})}">Delete</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p><a href="/addtodo">Add a new task</a></p>
+</body>
+</html>

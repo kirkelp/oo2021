@@ -5,6 +5,41 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch HMthread",
+            "request": "launch",
+            "mainClass": "HMthread",
+            "projectName": "w09_tunnirakenduse_lahendus_a3fae385"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread",
+            "request": "launch",
+            "mainClass": "Thread",
+            "projectName": "w09_tunnirakenduse_lahendus_a3fae385"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadHM",
+            "request": "launch",
+            "mainClass": "ThreadHM",
+            "projectName": "w09_tunnirakenduse_lahendus_a3fae385"
+        },
+        {
+            "type": "java",
+            "name": "Launch StreamHM",
+            "request": "launch",
+            "mainClass": "Homework.StreamHM",
+            "projectName": "w09_tunnirakenduse_lahendus_a3fae385"
+        },
+        {
+            "type": "java",
+            "name": "Launch StreamHM",
+            "request": "launch",
+            "mainClass": "StreamHM",
+            "projectName": "w09_tunnirakenduse_lahendus_a3fae385"
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",

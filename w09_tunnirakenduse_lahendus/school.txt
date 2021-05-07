@@ -1,0 +1,6 @@
+Taisi,õpilane
+Kaisa,õpetaja
+Triin,õpilane
+Kalli,õpetaja
+Kristi,õpetaja
+Kadi,õpilane
