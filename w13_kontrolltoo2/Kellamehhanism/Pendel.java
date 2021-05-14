@@ -1,18 +1,21 @@
 package Kellamehhanism;
 
 public class Pendel {
-    double v6nkeperiood;
-    int tiksumine = 0;
-    int ringid = 0;
+    private double pikkus;
+    double vp;
 
 
     public Pendel(Double pikkus){
-        v6nkeperiood = 2 * Math.PI * Math.sqrt(pikkus/9.8);
+        this.pikkus = pikkus;
+    }
+    public double getPikkus(){
+        return pikkus;
     }
 
-    public String tiksumised(){
-         tiksumine = tiksumine + 1;
-         return "tik tok";
+    public double V6nkeperiood(){
+        vp = 2 * Math.PI * Math.sqrt(pikkus/9.8);
+        return vp;
     }
+    
     
 }
